@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head><meta charset=UTF-8">
+            <title>Cabin</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script type="text/javascript" src="js/Funciones.js"></script>
+            <link href=styles.css rel="stylesheet"/>
+            <link id="Index" href="index.html" rel="import"/>
+        </head>
+        <body>
+            
+            <h2 align="center">Información de las cabañas</h2>
+            <button onclick="ConsultarCabin()">Consultar Cabañas</button>
+            <br>
+            <br>
+            <div id="resultado"></div>
+            <br>
+            <br>
+            <div id="detalle"></div>
+            <br>
+            <br>
+            <button onclick="AgregarCabin()">Nueva Cabaña</button>
+            <div>
+                <p id="labid" hidden="true">ID:<input type="number" id="id" placeholder="id" hidden="true"></p>
+                <p id="labbrand" hidden="true">BRAND:<input type="text" id="brand" placeholder="brand" hidden="true"></p>
+                <p id="labrooms" hidden="true">ROOMS:<input type="number" id="rooms" placeholder="rooms" hidden="true"></p>
+                <p id="labcatid" hidden="true">CATEGORY:<select id="category_id" hidden="true"><option value="">Seleccione una categoria</option></select>
+                <button id ="BMCat" class="bacc" onclick="MostrarCategoria()" hidden="true">Crear Categoria</button></p>
+                    <div id="categoria" hidden="true">
+                        <p id="labnameCat" hidden="true">NOMBRE:<input type="text" id="nameCat" placeholder="nombre categoria" hidden="true"></p>
+                        <p id="labdescCat" hidden="true">DESCRIPCION:<input type="text" id="descCat" placeholder="descripcion cat" hidden="true"></p>
+                        <button id ="BGCat" onclick="CrearCategoria()" hidden="true">Guardar Categoria</button>
+                    </div>               
+                <p id="labname" hidden="true">NOMBRE:<input type="text" id="name" placeholder="name" hidden="true"></p>
+                <p id="labdesc" hidden="true">DESCRIPCION:<input type="text" id="desc" placeholder="descripcion" hidden="true"></p>
+                <button id="BGCab" onclick="guardarCabin()" hidden="true">Guardar</button>
+                <button id="BECab" onclick="editarCabin()" hidden="true">Actualizar</button>
+            </div>
+            <br>
+            <br>
+            <button id ="main" onclick="location.href='index.html'">Panel Principal</button>
+            
+        </body>
+    </html>

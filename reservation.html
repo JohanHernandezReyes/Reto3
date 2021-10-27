@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head><meta charset=UTF-8">
+            <title>Reservation</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script type="text/javascript" src="js/Funciones.js"></script>
+            <link href=styles.css rel="stylesheet"/>
+            <link id="Index" href="index.html" rel="import"/>
+        </head>
+        <body>
+            
+            <h2 align="center">Haga su reservacion</h2>
+            <button onclick="ConsultarReserva()">Consultar Reservas</button>
+            <br>
+            <br>
+            <div id="resultReserv"></div>
+            <br>
+            <br>
+            <div id="score" hidden="true">
+                <input id="idreserva" type="number" hidden="true"></input>
+                <p id="labscore" hidden="true">CALIFICACIÓN:<select id="scores" hidden="true">
+                    <option value="">Puntuación</option>
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                </select></p>    
+                <textarea id="msgscore" hidden="true" cols="80" rows="5" style="resize: both;"  placeholder="Escribe tu Mensaje"></textarea><br>
+                <button id ="BGScore" onclick="GuardarScore()" hidden="true">Guardar Calificación</button>
+            </div> 
+            <br>
+            <br>
+            <button onclick="AgregarReserva()">Nueva Reservacion</button>
+            
+            <div>
+                <br>
+                <p id="labcabinreserv" hidden="true">CABAÑA:<select id="cabin_msg" hidden="true"><option value="">Seleccione una cabaña</option></select>
+                    <a href=cabin.html target="_blank"><button id ="NewCabinR" class="bacc" hidden="true">Crear Cabaña</button></a></p>
+                <p id="labclientreserv" hidden="true">CLIENTE:<select id="client_msg" hidden="true"><option value=""> Seleccione un cliente</option></select>
+                    <a href=client.html target="_blank"><button id ="NewClientR" class="bacc" hidden="true">Crear Cliente</button></a></p>
+                <p id="labFI" hidden="true">FECHA INICIAL:<input type="date" id="FI" placeholder="DD-MM-YYYY" hidden="true"></p>
+                <p id="labFF" hidden="true">FECHA ENTREGA:<input type="date" id="FF" placeholder="DD-MM-YYYY" hidden="true"></p>
+                <br>
+                <button id="BGR" hidden="true"onclick="guardarReserva()">Guardar</button>
+            <div>
+
+            <br>
+            <br>
+            <br>
+            <button id ="main" onclick="location.href='index.html'">Panel Principal</button>    
+            
+        </body>
+    </html>

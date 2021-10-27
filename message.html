@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head><meta charset=UTF-8">
+            <title>Message</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script type="text/javascript" src="js/Funciones.js"></script>
+            <link href=styles.css rel="stylesheet"/>
+            <link id="Index" href="index.html" rel="import"/>
+        </head>
+        <body>
+            
+            <h2 align="center">Dejenos sus mensajes o comentarios</h2>
+            <button onclick="ConsultarMsg()">Consultar Mensajes</button>
+            <br>
+            <br>
+            <div id="resultMsg"></div>
+            <br>
+            <br>
+            <br>
+            <button onclick="AgregarMsg()">Nuevo Mensaje</button>
+            
+            
+            <div>
+                <br>
+                <p id="labcabinmsg" hidden="true">CABAÑA:<select id="cabin_msg" hidden="true"><option value="">Seleccione una cabaña</option></select>
+                    <a href=cabin.html target="_blank"><button id ="NewCabin" class="bacc" hidden="true">Crear Cabaña</button></a></p>
+                <p id="labclientmsg" hidden="true">CLIENTE:<select id="client_msg" hidden="true"><option value=""> Seleccione un cliente</option></select>
+                    <a href=client.html target="_blank"><button id ="NewClient" class="bacc" hidden="true">Crear Cliente</button></a></p>
+                <textarea id="msg" hidden="true" cols="80" rows="5" style="resize: both;"  placeholder="Escribe tu Mensaje"></textarea><br>
+                <br>
+                <button id="BGM" hidden="true"onclick="guardarMsg()">Guardar</button>
+            <div>
+
+            <br>
+            <br>
+            <br>
+            <button id ="main" onclick="location.href='index.html'">Panel Principal</button>    
+            
+        </body>
+    </html>

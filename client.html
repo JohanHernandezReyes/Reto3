@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head><meta charset=UTF-8">
+            <title>Client</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script type="text/javascript" src="js/Funciones.js"></script>
+            <link href=styles.css rel="stylesheet"/>
+            <link id="Index" href="index.html" rel="import"/>
+        </head>
+        <body>
+                       
+            <h2 align="center">Información de Clientes</h2>
+            <button onclick="ConsultarClient()">Consultar Clientes</button>
+            <br>
+            <br>
+            <div id="resultClient"></div>
+            <br>
+            <br>
+            <div id="detalleClient"></div>
+            <br>
+            <br>
+            <button onclick="AgregarClient()">Nuevo Cliente</button>
+            <div>
+                <br>
+                <p id="labidC" hidden="true">ID:<input type="number" id="idC" placeholder="id Cliente" hidden="true"></p>
+                <p id="labnameC" hidden="true">NOMBRE:<input type="text" id="nameC" placeholder="Nombre Cliente" hidden="true"></p>
+                <p id="labemail" hidden="true">E-MAIL:<input type="text" id="email" placeholder="e-mail Cliente" hidden="true"></p>
+                <p id="labage" hidden="true">EDAD:<input type="number" id="age" placeholder="Edad Cliente" hidden="true"></p>
+                <p id="labclave" hidden="true">CONTRASEÑA:<input type="password" id="passwordC" placeholder="Contraseña Cliente" hidden="true"></p>
+                <button id="BGCl" onclick="guardarClient()" hidden="true">Guardar</button>
+                <button id="BECl" onclick="editarClient()" hidden="true">Actualizar</button>
+            </div>
+            
+            <br>
+            <br>
+            <button id ="main" onclick="location.href='index.html'">Panel Principal</button>
+          
+        </body>
+    </html>

@@ -1,0 +1,60 @@
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(117, 171, 192);
+}
+button{
+    width:100px;
+    text-align: center;
+    color:rgba(228, 34, 0, 0.486);
+    font-weight: bold;
+    padding:1px;
+    font-size: 15px;
+    margin-left: 5cm;
+    
+}
+
+
+input{
+    width:150px;
+    font-size: 15px;
+    align-self:right;
+    margin: 8px auto;
+    background-color:rgba(134, 141, 145, 0.74);
+}
+
+a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color:rgba(184, 59, 37, 0.774);
+}
+
+div{
+    margin-left: 5cm;
+    width:1000px;
+    height: auto;
+}
+
+p{font-weight: bold}
+
+button.bacc{
+    margin-left: 0.1cm;
+    text-align: center;
+    color:rgba(6, 26, 70, 0.486);
+    font-weight: bold;
+    padding:1px;
+    font-size: 15px;
+}
+
+select{
+    width: 150px;;
+    background-color:rgb(173, 219, 247);
+}   
+
+button.bacc2{
+    margin-left: 0.1cm;
+    text-align: center;
+    color:rgba(228, 34, 0, 0.486);
+    font-weight: bold;
+    padding:1px;
+    font-size: 15px;
+}
