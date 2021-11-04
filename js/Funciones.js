@@ -589,7 +589,6 @@ function CrearCategoria(){
         data:dataToSend,
         datatype:"JSON",
         success:function(respuesta){
-            $("#categoria").empty();
             $("#nameCat").val("");
             $("#descCat").val("");
             console.log(respuesta);
